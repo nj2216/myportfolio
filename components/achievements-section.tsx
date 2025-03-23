@@ -17,14 +17,14 @@ const achievements = [
     title: "HackerRank Software Engineer Role Certification",
     description: "Certified for advanced programming skills and problem-solving abilities.",
     icon: <CheckCircle className="h-8 w-8 text-green-500" />,
-    year: "2022",
+    year: "2024",
   },
   {
     id: 3,
     title: "DEC Club Technical Lead",
     description: "Led technical initiatives and mentored junior developers in the Digital Engineering Club.",
     icon: <Award className="h-8 w-8 text-blue-500" />,
-    year: "2021-2023",
+    year: "2024-Present",
   },
 ]
 

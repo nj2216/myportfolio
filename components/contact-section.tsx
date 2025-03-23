@@ -49,11 +49,10 @@ export default function ContactSection() {
             transition={{ delay: 0.1 }}
           >
             {state.succeeded ? (
-              <Card className="bg-black/50 border border-gray-800 h-full flex flex-col gap-10">
+              <Card className="bg-black/50 border border-gray-800 h-full flex flex-col" style={{gap: 130}}>
                 <CardHeader>
                   <CardTitle className="text-primary font-bold">
-                    Contact Form{" "}
-                    {state.succeeded && <span> - Your For Submitted</span>}
+                    Contact Form
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -71,8 +70,7 @@ export default function ContactSection() {
               <Card className="bg-black/50 border border-gray-800 h-full">
                 <CardHeader>
                   <CardTitle className="text-primary font-bold">
-                    Contact Form{" "}
-                    {state.succeeded && <span> - Your For Submitted</span>}
+                    Contact Form
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -137,6 +135,7 @@ export default function ContactSection() {
                       <Button
                         type="submit"
                         className="w-full bg-primary/50 text-black font-bold"
+                        disabled
                       >
                         Sending...
                       </Button>
@@ -186,7 +185,7 @@ export default function ContactSection() {
                       <div>
                         <h1 className="text-primary font-bold">GitHub</h1>
                         <p className="text-gray-400">
-                          Check out my code repositories
+                        Here lies my weekend projects and abandoned dreams
                         </p>
                       </div>
                     </a>
@@ -203,22 +202,22 @@ export default function ContactSection() {
                       <div>
                         <h3 className="text-primary font-bold">LinkedIn</h3>
                         <p className="text-gray-400">
-                          Connect with me professionally
+                        Because even tech geeks need networking
                         </p>
                       </div>
                     </a>
 
                     <a
-                      href="/blog"
-                      className="flex items-center p-4 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-primary/50 transition-all duration-300 hidden"
+                      href="/"
+                      className="flex items-center p-4 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-primary/50 transition-all duration-300"
                     >
                       <div className="p-3 rounded-full bg-gray-800 mr-4">
                         <Globe className="h-6 w-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="text-primary font-bold">Blog</h3>
+                        <h3 className="text-primary font-bold">+91 81481 12502</h3>
                         <p className="text-gray-400">
-                          Read my latest tech articles
+                           Tech support, life advice, and bad jokes included.
                         </p>
                       </div>
                     </a>

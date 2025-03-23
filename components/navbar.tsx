@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <nav className={`text-white py-4 fixed w-full transition-colors duration-300 ${scrolled || menuOpen ? "bg-gray-950" : "bg-transparent"}`} style={{ zIndex: 100 }}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <div className="text-lg font-bold">MyPortfolio</div>
+        <a href="/" className="text-lg font-bold">MyPortfolio</a>
         <div className="hidden md:flex space-x-4">
           <Link href="/#" className="hover:text-primary transition-colors">
             <FontAwesomeIcon icon={faHome} /> Home

@@ -18,7 +18,7 @@ export default function MatrixBackground() {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 
-    const characters = "0123456789"
+    const characters = "01"
     const fontSize = 14
     const columns = canvas.width / fontSize
 

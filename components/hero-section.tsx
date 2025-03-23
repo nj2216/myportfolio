@@ -47,7 +47,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
-          Passionate about building scalable applications, automating workflows, and creating user-friendly web solutions.
+        Tech enthusiast, problem solver, and the guy who makes code, content, and chaos work in perfect harmony.<br></br> I turn ideas into apps, bugs into features, and confusion into clarity.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -57,7 +57,7 @@ export default function HeroSection() {
           </Button>
           </Link>
             <Link href="#contact">
-            <Button size="lg" variant="outline" className="bg-primary hover:bg-primary/80 text-black font-bold">
+            <Button size="lg" className="bg-primary hover:bg-primary/80 text-black font-bold">
               Contact Me
             </Button>
             </Link>

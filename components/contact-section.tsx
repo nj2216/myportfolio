@@ -43,7 +43,7 @@ export default function ContactSection() {
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}>
             <Card className="bg-black/50 border border-gray-800 h-full">
               <CardHeader>
-                <CardTitle className="text-primary font-bold">Contact Form - Your Form Submitted</CardTitle>
+                <CardTitle className="text-secondary font-bold">Contact Form - Your Form Submitted</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -147,7 +147,7 @@ export default function ContactSection() {
 
                     <a
                       href="/blog"
-                      className="flex items-center p-4 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-primary/50 transition-all duration-300"
+                      className="flex items-center p-4 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-primary/50 transition-all duration-300 hidden"
                     >
                       <div className="p-3 rounded-full bg-gray-800 mr-4">
                         <Globe className="h-6 w-6 text-primary" />
@@ -289,7 +289,7 @@ export default function ContactSection() {
 
                     <a
                       href="/blog"
-                      className="flex items-center p-4 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-primary/50 transition-all duration-300"
+                      className="flex items-center p-4 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-primary/50 transition-all duration-300 hidden"
                     >
                       <div className="p-3 rounded-full bg-gray-800 mr-4">
                         <Globe className="h-6 w-6 text-primary" />

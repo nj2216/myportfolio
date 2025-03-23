@@ -7,7 +7,7 @@ import PortfolioSection from "@/components/portfolio-section"
 import AchievementsSection from "@/components/achievements-section"
 import ContactSection from "@/components/contact-section"
 import Navbar from "@/components/navbar"
-import { useRef } from "react"
+import { useRef } from "react"  
 
 // Import MatrixBackground with no SSR to avoid hydration issues
 const MatrixBackground = dynamic(() => import("@/components/matrix-background"), { ssr: false })

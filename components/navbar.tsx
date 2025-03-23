@@ -35,7 +35,7 @@ export default function Navbar() {
           <Link href="mailto:njeevan2216@gmail.com" target="_blank" className="hover:text-primary transition-colors">
             <FontAwesomeIcon icon={faEnvelope} /> Mail
           </Link>
-          <Link href="/blog" target="_blank" className="hover:text-primary transition-colors">
+          <Link href="https://drive.google.com/file/d/19HfU_rwsJ7O5xBhpKJmY0g5Zbzw6Tsor/view?usp=sharing" target="_blank" className="hover:text-primary transition-colors">
             <FontAwesomeIcon icon={faFileAlt} /> Resume
           </Link>
         </div>

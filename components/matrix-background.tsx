@@ -18,13 +18,13 @@ export default function MatrixBackground() {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 
-    const characters = "01"
+    const characters = "0123456789"
     const fontSize = 14
     const columns = canvas.width / fontSize
 
     const drops: number[] = []
     for (let i = 0; i < columns; i++) {
-      drops[i] = Math.floor(Math.random() * -100)
+      drops[i] = Math.floor(Math.random() * -1)
     }
 
     const draw = () => {

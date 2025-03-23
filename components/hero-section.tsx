@@ -39,7 +39,7 @@ export default function HeroSection() {
         </div>
         </Link>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 glitch-text">
+        <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 glitch-text">
           <span className="relative whitespace-nowrap">
             {text}
             <span className="absolute top-0 left-0 w-1 h-full bg-primary animate-blink"></span>

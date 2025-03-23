@@ -36,8 +36,8 @@ export default function Home() {
             <Link href="https://linkedin.com/in/nj2216" className="text-gray-400 hover:text-primary transition-colors">
               LinkedIn
             </Link>
-            <Link href="/blog" className="text-gray-400 hover:text-primary transition-colors">
-              Blog
+            <Link href="https://drive.google.com/file/d/19HfU_rwsJ7O5xBhpKJmY0g5Zbzw6Tsor/view?usp=sharing" className="text-gray-400 hover:text-primary transition-colors">
+              Resume
             </Link>
           </div>
         </div>

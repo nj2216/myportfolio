@@ -56,7 +56,6 @@ export default function SkillsSection() {
   }, [])
 
   return (
-    <section id="skills" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 inline-block relative">
@@ -117,6 +116,8 @@ export default function SkillsSection() {
               <span className="text-primary">{">"}</span> Loading skill database...
             </p>
             <div className="mt-2">
+              <span className="text-primary">{"$"}</span> <span className="text-yellow-400"></span> {skills[activeSkill].category}
+            </div>
               {skills[activeSkill].items.map((item, i) => (
                 <p key={i} className="text-gray-300">
                   <span className="text-yellow-400">[{i + 1}]</span> {item}
@@ -129,8 +130,6 @@ export default function SkillsSection() {
             </p>
           </div>
         </div>
-      </div>
-    </section>
-  )
+      )
 }
 

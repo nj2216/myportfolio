@@ -9,6 +9,13 @@ import Image from "next/image";
 // Import MatrixBackground with no SSR to avoid hydration issues
 const MatrixBackground = dynamic(() => import("@/components/matrix-background"), { ssr: false });
 
+  const stats = [
+    { label: "Monthly Active Sessions", value: "6.8K" },
+    { label: "Total songs Listened", value: "240K" },
+    { label: "Lines of Code", value: "8.6K" },
+    { label: "For all users", value: "FREE" },
+  ]
+
 export default function Medplay() {
   return (
     <div className="relative min-h-screen bg-black text-white">
@@ -16,6 +23,21 @@ export default function Medplay() {
       <Navbar title="Medplay - Jeevan N" />
       <main className="container mx-auto px-4 py-10 relative z-10">
         <MedHero />
+        <div className="relative overflow-hidden max-w-5xl mx-auto rounded-2xl border border-zinc-800 bg-gradient-to-b from-zinc-900/70 to-zinc-950 p-6 md:p-10">
+        <h3 className="text-3xl font-bold mb-3 text-emerald-400">Metrics</h3>
+        {/* Stats */}
+        <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+            {stats.map((s) => (
+            <div
+                key={s.label}
+                className="rounded-xl border border-zinc-800 bg-zinc-900/60 px-4 py-6 text-center hover:border-emerald-500/30 transition-colors hoverable"
+            >
+                <div className="text-2xl font-bold text-white">{s.value}</div>
+                <div className="mt-1 text-xs uppercase tracking-wide text-zinc-500">{s.label}</div>
+            </div>
+            ))}
+            </div>
+        </div>
 
         {/* Features Section */}
         <section className="max-w-5xl mx-auto mt-16">
@@ -142,6 +164,7 @@ export default function Medplay() {
               </div>
             </div>
           </div>
+          
         </section>
 
         {/* Back link */}

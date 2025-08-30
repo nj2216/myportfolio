@@ -13,30 +13,43 @@ const projects = [
   {
     id: 1,
     title: "MedPlay",
-    description: "A Flask-based music player that enables users to stream and manage their favorite songs seamlessly",
+    description: "A music player built with Flask, allowing users to stream and manage songs effortlessly.",
     image: "https://raw.githubusercontent.com/gowtham-2321/Medplay-UI-v2/refs/heads/jeevan-bk2/static/img/Screenshot%202025-03-23%20095553.png",
     techStack: ["Python", "HTML", "CSS", "Javascript", "Flask"],
     demoUrl: "https://medplay.vercel.app",
-    repoUrl: "hhtps://github.com/njeeevan2216/medplay",
+    repoUrl: "https://github.com/gowtham-2321/Medplay-UI-v2",
+    pageUrl: "/medplay"
   },
   {
     id: 2,
+    title: "jvincipy",
+    description: "A Python DSL for HTML using Python objects, featuring a TagFactory for a wide range of elements.",
+    image: "/images/jvincipy/thumbnail.png",
+    techStack: ["Python", "HTML"],
+    demoUrl: "https://pypi.org/project/jvincipy/",
+    repoUrl: "https://github.com/nj2216/jvincipy",
+    pageUrl: "/jvincipy"
+  },
+  {
+    id: 3,
     title: "LAN MDH Streams",
-    description: "A local-network Content-Delivery app to facilitate seamless streaming of in-campus productions",
+    description: "A local network content delivery app for streaming in-campus productions seamlessly.",
     image: "https://raw.githubusercontent.com/njeeevan2216/LAN-MDH-Streams/refs/heads/pre-realease/static/img/Screenshot%202025-03-23%20095809.png",
     techStack: ["Python", "Flask", "Networking", "HTML", "Bootstrap"],
     demoUrl: "https://lan-mdh-streams-live.vercel.app",
     repoUrl: "https://github.com/njeeevan2216/LAN-MDH-Streams",
+    pageUrl: "/#"
   },
   {
-    id: 3,
+    id: 4,
     title: "MangoEdit",
-    description: "A Rip-Off version Notepad done as a Challenge with my frnd",
+    description: "A Notepad clone created as a challenge with a friend, built using Python and Tkinter.",
     image: "https://raw.githubusercontent.com/njeeevan2216/MangoEdit/refs/heads/main/Screenshot%202025-03-23%20100144.png",
     techStack: ["Python", "Tkinter"],
     demoUrl: "https://github.com/njeeevan2216/MangoEdit/releases",
     repoUrl: "https://github.com/njeeevan2216/MangoEdit",
-  }
+    pageUrl: "/#"
+  },
 ]
 
 export default function PortfolioSection() {
@@ -55,7 +68,7 @@ export default function PortfolioSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {projects.map((project) => ( 
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
@@ -69,7 +82,10 @@ export default function PortfolioSection() {
               onHoverEnd={() => setHoveredProject(null)}
               className="h-full"
             >
+
               <Card className="h-full overflow-hidden bg-black/50 border border-gray-800 hover:border-primary/50 transition-all duration-300">
+                <Link href={project.pageUrl}>
+
                 <div className="relative aspect-video overflow-hidden">
                   <Image
                     src={project.image || "/placeholder.svg"}
@@ -95,11 +111,13 @@ export default function PortfolioSection() {
                     </motion.div>
                   )}
                 </div>
+                
 
                 <CardContent className="p-6">
                   <h3 className="text-gray-400 font-bold mb-2">{project.title}</h3>
                   <p className="text-gray-500">{project.description}</p>
                 </CardContent>
+                </Link>
 
                 <CardFooter className="p-6 pt-0 flex justify-between">
                   <Link href={project.repoUrl} target="_blank">
@@ -108,16 +126,18 @@ export default function PortfolioSection() {
                     Repo
                   </Button>
                   </Link>
+                  
                   <Link href={project.demoUrl} target="_blank">
                   <Button variant="outline" size="sm" className="border-secondary/50 text-secondary bg-primary-20 hover:bg-primary/10 hover:text-primary hover:border-primary">
                     <ExternalLink className="h-4 w-4 mr-2" />
-                    Demo
+                    Try
                   </Button>
                   </Link>
                 </CardFooter>
               </Card>
+              
             </motion.div>
-          ))}
+        ))}
         </div>
       </div>
     </section>

@@ -2,7 +2,11 @@
 
 import { useEffect, useRef } from "react"
 
-export default function MatrixBackground() {
+type MatrixBackgroundProps = {
+  color? : string;
+};
+
+export default function MatrixBackground({ color = "#0f0" } : MatrixBackgroundProps ) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -31,18 +35,19 @@ export default function MatrixBackground() {
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)"
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      ctx.fillStyle = "#0f0"
+      ctx.fillStyle = color
       ctx.font = `${fontSize}px monospace`
 
       for (let i = 0; i < drops.length; i++) {
         const text = characters.charAt(Math.floor(Math.random() * characters.length))
 
         // Vary the color from green to cyan to create a more futuristic look
-        const hue = 120 + Math.random() * 60 // Range from green (120) to cyan-ish (180)
+        const hue = 50 + Math.random() * 60 // Range from green (120) to cyan-ish (180)
         const saturation = 50 + Math.random() * 50 // 50-100%
-        const lightness = 40 + Math.random() * 20 // 40-60%
+        const lightness = 50 + Math.random() * 20 // 40-60%
 
-        ctx.fillStyle = `hsl(${hue}, ${saturation}%, ${lightness}%)`
+        // ctx.fillStyle = `hsl(${hue}, ${saturation}%, ${lightness}%)`
+        ctx.fillStyle = color
         ctx.fillText(text, i * fontSize, drops[i] * fontSize)
 
         if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {

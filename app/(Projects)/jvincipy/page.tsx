@@ -5,6 +5,8 @@ import Navbar from "@/components/navbar";
 import Link from "next/link";
 import Image from "next/image";
 import JvHero from "@/components/jvincipy/jvinc-hero";
+import ImagePreview from "@/components/image-preview";
+import { ImageResponse } from "next/server";
 
 // Matrix background effect
 const MatrixBackground = dynamic(() => import("@/components/matrix-background"), { ssr: false });
@@ -12,7 +14,7 @@ const MatrixBackground = dynamic(() => import("@/components/matrix-background"),
 export default function Jvincipy() {
   return (
     <div className="relative min-h-screen bg-black text-white">
-      <MatrixBackground />
+      <MatrixBackground color="#00f"/>
       <Navbar title="jvincipy - Jeevan N" />
       <main className="container mx-auto px-4 py-10 relative z-10">
         {/* Hero Section */}
@@ -27,9 +29,7 @@ export default function Jvincipy() {
           {/* Feature 1 */}
           <div className="mb-20 grid gap-6 md:grid-cols-2 items-center">
             <div className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/60">
-              <div className="relative aspect-[16/9]">
-                <Image src="/images/jvincipy/feature_html.png" alt="HTML DSL" fill className="object-cover" />
-              </div>
+                <ImagePreview src="/images/jvincipy/feature_html.png" alt="HTML DSL" />
             </div>
             <div className="space-y-4">
               <h3 className="text-2xl font-bold mb-3 text-emerald-400">HTML DSL</h3>
@@ -45,9 +45,7 @@ export default function Jvincipy() {
           {/* Feature 2 */}
           <div className="mb-20 grid gap-6 md:grid-cols-2 items-center md:[&>*:first-child]:order-2">
             <div className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/60">
-              <div className="relative aspect-[16/9]">
-                <Image src="/images/jvincipy/feature_css.png" alt="CSS DSL" fill className="object-cover" />
-              </div>
+                <ImagePreview src="/images/jvincipy/feature_css.png" alt="CSS DSL" />
             </div>
             <div className="space-y-4">
               <h3 className="text-2xl font-bold mb-3 text-emerald-400">CSS DSL</h3>
@@ -63,9 +61,7 @@ export default function Jvincipy() {
           {/* Feature 3 */}
           <div className="mb-20 grid gap-6 md:grid-cols-2 items-center">
             <div className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/60">
-              <div className="relative aspect-[16/9]">
-                <Image src="/images/jvincipy/feature_cli.png" alt="CLI Tool" fill className="object-cover" />
-              </div>
+                <ImagePreview src="/images/jvincipy/feature_cli.png" alt="CLI Tool" />
             </div>
             <div className="space-y-4">
               <h3 className="text-2xl font-bold mb-3 text-emerald-400">CLI Tool</h3>
@@ -81,9 +77,7 @@ export default function Jvincipy() {
           {/* Feature 4 */}
           <div className="mb-20 grid gap-6 md:grid-cols-2 items-center md:[&>*:first-child]:order-2">
             <div className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/60">
-              <div className="relative aspect-[16/9]">
-                <Image src="/images/jvincipy/feature_flask.png" alt="Flask Integration" fill className="object-cover" />
-              </div>
+                <ImagePreview src="/images/jvincipy/feature_flask.png" alt="Flask Integration" />
             </div>
             <div className="space-y-4">
               <h3 className="text-2xl font-bold mb-3 text-emerald-400">Flask Integration</h3>

@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import MedHero from "@/components/medplay/med-hero";
 import Link from "next/link";
 import Image from "next/image";
+import ImagePreview from "@/components/image-preview";
 
 // Import MatrixBackground with no SSR to avoid hydration issues
 const MatrixBackground = dynamic(() => import("@/components/matrix-background"), { ssr: false });
@@ -19,7 +20,7 @@ const MatrixBackground = dynamic(() => import("@/components/matrix-background"),
 export default function Medplay() {
   return (
     <div className="relative min-h-screen bg-black text-white">
-      <MatrixBackground />
+      <MatrixBackground color="#f00"/>
       <Navbar title="Medplay - Jeevan N" />
       <main className="container mx-auto px-4 py-10 relative z-10">
         <MedHero />
@@ -47,11 +48,7 @@ export default function Medplay() {
 
           {/* Feature Showcase 1 */}
           <div className="mb-20 grid gap-6 md:grid-cols-2 items-center">
-            <div className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/60">
-              <div className="relative aspect-[16/8]">
-                <Image src="/images/medplay/feature_1.png" alt="Search and Player" fill className="object-cover" />
-              </div>
-            </div>
+            <ImagePreview src="/images/medplay/feature_1.png" alt="Search and Player" />
             <div className="space-y-4">
             <h3 className="text-2xl font-bold mb-3 text-emerald-400">Effortless Music Discovery & Control</h3>
               {[
@@ -71,9 +68,7 @@ export default function Medplay() {
           {/* Feature Showcase 2 */}
           <div className="mb-20 grid gap-6 md:grid-cols-2 items-center md:[&>*:first-child]:order-2">
             <div className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/60">
-              <div className="relative aspect-[16/9]">
-                <Image src="/images/medplay/feature_2.png" alt="Playlist Management" fill className="object-cover" />
-              </div>
+                <ImagePreview src="/images/medplay/feature_2.png" alt="Playlist Management" />
             </div>
             
             <div className="space-y-4">
@@ -95,9 +90,7 @@ export default function Medplay() {
           {/* Responsive Showcase */}
           <div className="mb-20 grid gap-6 md:grid-cols-2 items-center">
             <div className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/60">
-              <div className="relative aspect-[16/7]">
-                <Image src="/images/medplay/responsive.png" alt="Responsive Design" fill className="object-cover" />
-              </div>
+                <ImagePreview src="/images/medplay/responsive.png" alt="Responsive Design" />
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-3 text-emerald-400">Responsive Design</h3>

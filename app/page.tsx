@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-black text-white">
       <MatrixBackground />
-      <Navbar title="MyPortfolio"/>
+      <Navbar title="Jeevan N"/>
       <main className="container mx-auto px-4 py-10 relative z-10">
         <HeroSection />
         <SkillsSection />

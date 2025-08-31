@@ -1,6 +1,7 @@
 "use client";
 import Image from 'next/image';
 import Link from 'next/link';
+import GlitchText from '../glitch-text';
 
 export default function JvHero() {
     return (
@@ -8,7 +9,7 @@ export default function JvHero() {
             <div className="max-w-6xl mx-auto text-center">
                 <div className="mb-12">
                     {/* Hero Image - Replace placeholder-hero.png with your actual hero image */}
-                    <div className="relative w-full h-[500px] rounded-xl overflow-hidden mb-2">
+                    <div className="relative w-full h-[450px] rounded-xl overflow-hidden mb-2">
                         <Image
                             src="/images/jvincipy/thumbnail.png"
                             alt="jvinvipy PyPI Project Page"
@@ -21,7 +22,8 @@ export default function JvHero() {
                 </div>
                 
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-5xl font-bold h-16 mb-2 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-white">
+                    <GlitchText txt="$ pwd → nj2216/jvincipy"/>
+                    <h1 className="text-2xl font-bold h-8 mb-2 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-white">
                         jvincipy — Python DSL for HTML
                     </h1>
                     <p className="text-xl leading-relaxed mb-4 text-gray-300">

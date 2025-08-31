@@ -1,28 +1,12 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { Terminal, ChevronDown, ChevronUp } from "lucide-react"
+import { Terminal, ChevronUp } from "lucide-react"
 import Link from "next/link"
+import GlitchText from "./glitch-text"
 
 export default function HeroSection() {
-  const [text, setText] = useState("")
-  const fullText = "$ whoami → Jeevan Nagarajan"
-
-  useEffect(() => {
-    let currentIndex = 0
-    const interval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setText(fullText.substring(0, currentIndex))
-        currentIndex++
-      } else {
-        clearInterval(interval)
-      }
-    }, 100)
-
-    return () => clearInterval(interval)
-  }, [])
 
   return (
     <section className="min-h-[90vh] flex flex-col justify-center items-center text-center py-20">
@@ -39,12 +23,7 @@ export default function HeroSection() {
         </div>
         </Link>
 
-        <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 glitch-text">
-          <span className="relative whitespace-nowrap">
-            {text}
-            <span className="absolute top-0 left-0 w-1 h-full bg-primary animate-blink"></span>
-          </span>
-        </h1>
+        <GlitchText txt="$ whoami → Jeevan Nagarajan"/>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
         Tech enthusiast, problem solver, and the guy who makes code, content, and chaos work in perfect harmony.<br></br> I turn ideas into apps, bugs into features, and confusion into clarity.

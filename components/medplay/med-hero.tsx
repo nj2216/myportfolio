@@ -1,9 +1,10 @@
 "use client";
 import Image from 'next/image';
+import GlitchText from '@/components/glitch-text';
 
 export default function MedHero() {
     return (
-        <section className="mb-20 py-20">
+        <section className="mb-2 py-20">
             <div className="max-w-6xl mx-auto text-center">
                 <div className="mb-12">
                     {/* Hero Image - Replace placeholder-hero.png with your actual hero image */}
@@ -20,9 +21,10 @@ export default function MedHero() {
                 </div>
                 
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-5xl font-bold h-16 mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+                    <GlitchText txt="$ pwd → nj2216/medplay" />
+                    <h3 className="text-2xl font-bold h-8 mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
                         Medplay Music Player
-                    </h1>
+                    </h3>
                     <p className="text-xl leading-relaxed mb-8 text-gray-300">
                         An ad-free modern music player built with Flask and modern web technologies. 
                         Experience seamless music playback with features like playlist management, 

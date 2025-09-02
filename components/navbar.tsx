@@ -51,7 +51,7 @@ export default function Navbar({ title = "MyPortfolio" }: NavbarProps) {
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center space-y-4 mt-4 bg-gray-950 p-4 rounded-lg">
+        <div className="md:hidden flex flex-col items-left space-y-4 mt-4 bg-gray-950 p-4 rounded-lg">
           <Link href="/#" className="hover:text-primary transition-colors">
             <FontAwesomeIcon icon={faHome} /> Home
           </Link>

@@ -174,7 +174,7 @@ export default function ContactSection() {
 
                   <div className="space-y-6">
                     <a
-                      href="https://github.com/njeeevan2216"
+                      href="https://github.com/nj2216"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center p-4 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-primary/50 transition-all duration-300"

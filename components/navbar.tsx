@@ -34,7 +34,7 @@ export default function Navbar({ title = "MyPortfolio" }: NavbarProps) {
           <Link href="https://linkedin.com/in/nj2216" target="_blank" className="hover:text-primary transition-colors">
             <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
           </Link>
-          <Link href="https://github.com/njeeevan2216" target="_blank" className="hover:text-primary transition-colors">
+          <Link href="https://github.com/nj2216" target="_blank" className="hover:text-primary transition-colors">
             <FontAwesomeIcon icon={faGithub} /> Github
           </Link>
           <Link href="mailto:njeevan2216@gmail.com" target="_blank" className="hover:text-primary transition-colors">
@@ -58,7 +58,7 @@ export default function Navbar({ title = "MyPortfolio" }: NavbarProps) {
           <Link href="https://linkedin.com/in/nj2216" target="_blank" className="hover:text-primary transition-colors">
             <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
           </Link>
-          <Link href="https://github.com/njeeevan2216" target="_blank" className="hover:text-primary transition-colors">
+          <Link href="https://github.com/nj2216" target="_blank" className="hover:text-primary transition-colors">
             <FontAwesomeIcon icon={faGithub} /> Github
           </Link>
           <Link href="mailto:njeevan2216@gmail.com" target="_blank" className="hover:text-primary transition-colors">

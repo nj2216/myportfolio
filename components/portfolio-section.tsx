@@ -37,7 +37,7 @@ const projects = [
     image: "https://raw.githubusercontent.com/njeeevan2216/LAN-MDH-Streams/refs/heads/pre-realease/static/img/Screenshot%202025-03-23%20095809.png",
     techStack: ["Python", "Flask", "Networking", "HTML", "Bootstrap"],
     demoUrl: "https://lan-mdh-streams-live.vercel.app",
-    repoUrl: "https://github.com/njeeevan2216/LAN-MDH-Streams",
+    repoUrl: "https://github.com/nj2216/LAN-MDH-Streams",
     pageUrl: "/#"
   },
   {
@@ -46,8 +46,8 @@ const projects = [
     description: "A Notepad clone created as a challenge with a friend, built using Python and Tkinter.",
     image: "https://raw.githubusercontent.com/njeeevan2216/MangoEdit/refs/heads/main/Screenshot%202025-03-23%20100144.png",
     techStack: ["Python", "Tkinter"],
-    demoUrl: "https://github.com/njeeevan2216/MangoEdit/releases",
-    repoUrl: "https://github.com/njeeevan2216/MangoEdit",
+    demoUrl: "https://github.com/nj2216/MangoEdit/releases",
+    repoUrl: "https://github.com/nj2216/MangoEdit",
     pageUrl: "/#"
   },
 ]

@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { HeartIcon } from "lucide-react";
 
 export default function Footer() {
     return (
         <footer className="border-t border-gray-800 py-6 relative z-10">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+          <div className="text-gray-400 mb-4 md:mb-0">Made with ❤️ from India</div>
           <p className="text-gray-400 mb-4 md:mb-0">© {new Date().getFullYear()} | Built with Next.js & Tailwind</p>
           <div className="flex space-x-4">
             <Link href="https://github.com/njeeevan2216" className="text-gray-400 hover:text-primary transition-colors">

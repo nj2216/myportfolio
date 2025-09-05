@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { HeartIcon } from "lucide-react";
 
 export default function Footer() {
     return (

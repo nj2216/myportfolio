@@ -1,0 +1,59 @@
+/* new: minimal code block styling (optional highlighting baseline) */
+.code-block {
+  overflow-x: auto;
+  border-radius: var(--radius, 0.5rem);
+  background: var(--muted);
+  color: var(--foreground);
+  padding: 1rem;
+  font-size: 0.875rem; /* text-sm */
+  line-height: 1.6;
+  border: 1px solid var(--border);
+}
+
+.flag {
+  background: var(--muted);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem; /* text-xs */
+}
+
+/* anchor link styles for headings, React docs-like subtle underline */
+a.anchor {
+  color: var(--muted-foreground);
+  text-decoration: none;
+  margin-left: 0.25rem;
+  opacity: 0;
+  transition: opacity .15s ease;
+}
+h2:hover a.anchor,
+h3:hover a.anchor {
+  opacity: 1;
+}
+a.anchor:hover {
+  color: var(--foreground);
+  text-decoration: underline;
+}
+
+/* Keep inline code readable across themes */
+p > code,
+li > code {
+  background: var(--muted);
+  color: var(--foreground);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.375rem;
+  font-size: 0.875em;
+  border: 1px solid var(--border);
+}
+
+/* Make sure code uses mono font from your globals */
+code,
+pre,
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+}
+
+/* Preserve whitespace in blocks */
+.code-block code {
+  white-space: pre;
+}

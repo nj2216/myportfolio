@@ -32,6 +32,26 @@ const projects = [
   },
   {
     id: 3,
+    title: "jyinit",
+    description: "A modern Python project scaffolding tool with support for multiple templates",
+    image: "/images/jyinit/thumbnail.png",
+    techStack: ["Python"],
+    demoUrl: "https://pypi.org/project/jyinit/",
+    repoUrl: "https://github.com/nj2216/jyinit",
+    pageUrl: "/jyinit"
+  },
+  // {
+  //   id: 4,
+  //   title: "PreCheckin",
+  //   description: "AI-powered pre-consultation system for faster, accurate diagnosis in PHCs.",
+  //   image: "/images/precheckin/thumbnail.png",
+  //   techStack: ["Flask", "SQLite", "Together AI", "Responsive Web"],
+  //   demoUrl: "https://precheck-in-tutedude.vercel.app",
+  //   repoUrl: "https://github.com/nj2216/precheck.in",
+  //   pageUrl: "/precheckin"
+  // },
+  {
+    id: 5,
     title: "LAN MDH Streams",
     description: "A local network content delivery app for streaming in-campus productions seamlessly.",
     image: "https://raw.githubusercontent.com/njeeevan2216/LAN-MDH-Streams/refs/heads/pre-realease/static/img/Screenshot%202025-03-23%20095809.png",
@@ -41,7 +61,7 @@ const projects = [
     pageUrl: "/#"
   },
   {
-    id: 4,
+    id: 6,
     title: "MangoEdit",
     description: "A Notepad clone created as a challenge with a friend, built using Python and Tkinter.",
     image: "https://raw.githubusercontent.com/njeeevan2216/MangoEdit/refs/heads/main/Screenshot%202025-03-23%20100144.png",

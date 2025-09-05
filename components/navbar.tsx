@@ -6,9 +6,10 @@ import { faHome, faEnvelope, faFileAlt, faBars, faClose } from '@fortawesome/fre
 
 type NavbarProps = {
   title?: string;
+  target?: string;
 };
 
-export default function Navbar({ title = "MyPortfolio" }: NavbarProps) {
+export default function Navbar({ title = "MyPortfolio", target = "#" }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,7 +27,7 @@ export default function Navbar({ title = "MyPortfolio" }: NavbarProps) {
   return (
     <nav className={`text-white py-4 fixed w-full transition-colors duration-300 ${scrolled || menuOpen ? "bg-gray-950" : "bg-transparent"}`} style={{ zIndex: 100 }}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="/" className="text-4xl font-bold">{title}</a>
+        <a href={target} className="text-4xl font-bold">{title}</a>
         <div className="hidden md:flex space-x-4">
           <Link href="/#" className="hover:text-primary transition-colors">
             <FontAwesomeIcon icon={faHome} /> Home

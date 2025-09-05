@@ -11,7 +11,7 @@ export default function JvHero() {
                     {/* Hero Image - Replace placeholder-hero.png with your actual hero image */}
                     <div className="relative w-full h-[450px] rounded-xl overflow-hidden mb-2">
                         <Image
-                            src="/images/jvincipy/thumbnail.png"
+                            src="/images/jvincipy/hero-dashboard.png"
                             alt="jvinvipy PyPI Project Page"
                             fill
                             className="object-cover"

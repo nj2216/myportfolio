@@ -4,22 +4,24 @@ export default function Page() {
   return (
     <div className="space-y-6">
       <h1 className="text-pretty text-emerald-600 text-3xl font-bold">Overview</h1>
-      <p className="leading-relaxed text-justify">
+      <ul className="leading-relaxed5 px-4">
+        <li>
         jyinit is a fast Python project initializer for creating consistent, ready-to-ship project structures from
         curated templates. It streamlines bootstrapping with sensible defaults, optional CI, license setup, git
         repository initialization, and interactive flows so you can start coding immediately.
-      </p>
+        </li>
+      </ul>
 
       <H2>Key features</H2>
       <ul className="list-disc pl-6 leading-relaxed">
         <li> <strong>Multiple templates</strong>: Flask, FastAPI, Django, Streamlit, ML, libraries, etc.</li>
         <li><strong>Interactive mode</strong> <span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-100">--interactive</span>: prompts for missing options.</li>
-        <li><strong>Per-template GitHub Actions workflows</strong> (`--ci`).</li>
+        <li><strong>Per-template GitHub Actions workflows</strong> (<span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-100">--ci</span>).</li>
         <li><strong>Licenses included</strong> (MIT, Apache-2.0, GPL-3.0, …).</li>
         <li><strong>Git integration</strong>:  </li>
         <li> <span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-100">--git </span> → initializes git repo(s).  </li>
         <li> <span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-100">--gitrep [url] </span> → initializes repo(s) + sets a remote & pushes commit.</li>
-        <li><strong>Tests scaffold</strong>: adds a <span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-100">tests/</span> folder with `__init__.py`.</li>
+        <li><strong>Tests scaffold</strong>: adds a <span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-100">tests/</span> folder with <span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-100">__init__.py</span>.</li>
         <li><strong>Virtual environments</strong> (<span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-100">--venv</span>) per subproject.</li>
         <li><strong>Dry-run mode</strong>: preview without creating files</li>
       </ul>

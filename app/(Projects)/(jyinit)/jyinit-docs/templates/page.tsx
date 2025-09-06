@@ -9,7 +9,7 @@ export default function Page() {
       <h1 className="text-pretty text-emerald-600 text-3xl font-bold">Templates</h1>
       <p className="leading-relaxed">
         Templates define the initial structure, configuration, and tooling of your project. Choose the one that best
-        matches your use case. The list below is a common starting set - your installation may include more or fewer.
+        matches your use case.
       </p>
 
       <H2>List available templates (CLI)</H2>
@@ -22,6 +22,7 @@ export default function Page() {
 
 
       <H2>Available templates</H2>
+      <p className="leading-relaxed">The list below is a common starting set - your installation may include more or fewer.</p>
       <div className="grid gap-4 md:grid-cols-2">
         {templates.map((t) => (
           <div key={t.slug} className="rounded-lg emerald border p-4 hover:bg-emerald-50 transition-colors hoverable ">

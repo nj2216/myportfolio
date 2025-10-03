@@ -30,7 +30,7 @@ export default function TemplateDetailPage({ params }: { params: { slug: string 
         code={`# install
 pip install jyinit
 
-# create from ${tpl.slug}
+# create a scaffold for a ${tpl.name.toLowerCase()}
 jyinit create my-project --type ${tpl.slug}
 
 # interactive mode => you will be allowed to choose the TEMPLATE in interactive mode too

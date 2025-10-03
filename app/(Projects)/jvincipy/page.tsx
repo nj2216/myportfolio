@@ -145,10 +145,10 @@ print(sheet.rules[0].render())`}
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6">
               <h3 className="text-xl font-semibold mb-4 text-emerald-400">Project Structure</h3>
               <ul className="space-y-2 text-zinc-300">
-                <li>• `jvincipy/core.py` — core logic</li>
-                <li>• `jvincipy/tags.py` — tag factories</li>
-                <li>• `jvincipy/css.py` — CSS DSL</li>
-                <li>• `jvincipy/cli.py` — CLI entrypoint</li>
+                <li>• <span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-900">jvincipy/core.py</span> — core logic</li>
+                <li>• <span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-900">jvincipy/tags.py</span> — tag factories</li>
+                <li>• <span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-900">jvincipy/css.py</span> — CSS DSL</li>
+                <li>• <span className="font-[Consolas] rounded border border-zinc-100/50 bg-gray-900">jvincipy/cli.py</span> — CLI entrypoint</li>
               </ul>
             </div>
           </div>

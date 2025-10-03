@@ -4,11 +4,13 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import MedHero from "@/components/medplay/med-hero";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import ImagePreview from "@/components/image-preview";
+import Particles from "@/components/reactbits/particlesback";
+
 
 // Import MatrixBackground with no SSR to avoid hydration issues
-const MatrixBackground = dynamic(() => import("@/components/matrix-background"), { ssr: false });
+// const MatrixBackground = dynamic(() => import("@/components/matrix-background"), { ssr: false });
 
   const stats = [
     { label: "Monthly Active Sessions", value: "6.8K" },
@@ -20,7 +22,20 @@ const MatrixBackground = dynamic(() => import("@/components/matrix-background"),
 export default function Medplay() {
   return (
     <div className="relative min-h-screen bg-black text-white">
-      <MatrixBackground color="#f00"/>
+      {/* <MatrixBackground color="#f00"/> */}
+
+      <div style={{ width: '100%', height: '100%', position: 'fixed' }}>
+        <Particles
+          particleColors={['#34D399', '#34D399']}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={false}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
       <Navbar title="Medplay - Jeevan N" />
       <main className="container mx-auto px-4 py-10 relative z-10">
         <MedHero />

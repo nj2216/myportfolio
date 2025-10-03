@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Code, Server, Database, Cpu, Wrench, BrainCircuit } from "lucide-react"
+import { Code, Server, Database, Cpu, Wrench, BrainCircuit, ChevronDown } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const skills = [
@@ -57,7 +57,16 @@ export default function SkillsSection() {
 
   return (
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ repeat: Number.POSITIVE_INFINITY, duration: 2 }}
+                className="flex flex-col justify-center items-center text-center"
+              >
+        <div className="text-center">
+          <ChevronDown className="h-10 w-10 text-primary/70 cursor-pointer" />
+          </div>
+          </motion.div>
+        <div className="text-center mb-16 pt-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 inline-block relative">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-500">
               Skills & Expertise
@@ -99,7 +108,7 @@ export default function SkillsSection() {
             </motion.div>
           ))}
         </div>
-
+        {/* 
         <div className="mt-16 p-6 bg-black/50 border border-gray-800 rounded-xl">
           <div className="flex items-center mb-4">
             <div className="flex space-x-2 mr-4">
@@ -109,6 +118,7 @@ export default function SkillsSection() {
             </div>
             <p className="text-gray-400 text-sm">terminal</p>
           </div>
+          
 
           <div className="font-mono text-sm">
             <p className="text-green-500">$ skills --list-all</p>
@@ -128,7 +138,8 @@ export default function SkillsSection() {
               <span className="text-primary mr-1">$</span>
               <span className="w-2 h-4 bg-primary animate-blink"></span>
             </p>
-          </div>
+          </div> 
+          */}
         </div>
       )
 }

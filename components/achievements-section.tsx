@@ -24,7 +24,7 @@ const achievements = [
     title: "DEC Club Technical Lead",
     description: "Led technical initiatives and mentored junior developers in the Digital Engineering Club.",
     icon: <Award className="h-8 w-8 text-blue-500" />,
-    year: "2024-Present",
+    year: "2024",
   },
 ]
 

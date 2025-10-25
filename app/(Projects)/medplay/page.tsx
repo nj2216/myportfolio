@@ -14,7 +14,7 @@ import Particles from "@/components/reactbits/particlesback";
 
   const stats = [
     { label: "Monthly Active Sessions", value: "6.8K" },
-    { label: "Total songs Listened", value: "340K+" },
+    { label: "Total songs Listened", value: "417K+" },
     { label: "Lines of Code", value: "8.6K" },
     { label: "For all users", value: "FREE" },
   ]
